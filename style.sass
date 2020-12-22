@@ -1,0 +1,64 @@
+*
+    margin: 0
+    padding: 0
+    font-family: "montserrat", sans-serif
+    box-sizing: border-box
+
+body
+    background: rgb(0,0,0)
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(9,9,121,1) 35%, rgba(77,46,119,1) 100%)
+    min-height: 100vh
+
+.container
+    max-width: 800px
+    margin: auto
+    padding: 10px
+    color: #fff
+
+.notcomp
+    border: 2px solid #deff5a
+    border-radius: 25px
+    margin-top: 5px
+    padding: 0 10px
+
+.comp
+    border: 2px solid rgba(90,255,251,1)
+    border-radius: 25px
+    margin-top: 5px
+    padding: 0 10px
+
+.txtb
+    width: 100%
+    border: none
+    border-bottom: 2px solid #fff
+    background: none
+    padding: 10px
+    outline: none
+    font-size: 18px
+    color: #fff
+
+h3
+    margin: 10px 0
+
+.task
+    width: 100%
+    color: #000
+    font-weight: bold
+    padding: 18px
+    margin: 6px 0
+    overflow: hidden
+
+    .notcomp &
+        background: rgb(222,255,90)
+        background: linear-gradient(130deg, rgba(222,255,90,1) 0%, rgba(252,159,55,1) 50%, rgba(222,255,90,1) 100%)
+        border-radius: 50px
+
+    & i
+        float: right
+        margin-left: 20px
+        cursor: pointer
+
+    .comp &
+        background: rgb(90,255,251)
+        background: linear-gradient(130deg, rgba(90,255,251,1) 0%, rgba(55,252,139,1) 50%, rgba(90,255,251,1) 100%)
+        border-radius: 50px

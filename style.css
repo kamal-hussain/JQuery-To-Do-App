@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+  box-sizing: border-box; }
+
+body {
+  background: black;
+  background: linear-gradient(180deg, black 0%, #090979 35%, #4d2e77 100%);
+  min-height: 100vh; }
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+  color: #fff; }
+
+.notcomp {
+  border: 2px solid #deff5a;
+  border-radius: 25px;
+  margin-top: 5px;
+  padding: 0 10px; }
+
+.comp {
+  border: 2px solid #5afffb;
+  border-radius: 25px;
+  margin-top: 5px;
+  padding: 0 10px; }
+
+.txtb {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: none;
+  padding: 10px;
+  outline: none;
+  font-size: 18px;
+  color: #fff; }
+
+h3 {
+  margin: 10px 0; }
+
+.task {
+  width: 100%;
+  color: #000;
+  font-weight: bold;
+  padding: 18px;
+  margin: 6px 0;
+  overflow: hidden; }
+  .notcomp .task {
+    background: #deff5a;
+    background: linear-gradient(130deg, #deff5a 0%, #fc9f37 50%, #deff5a 100%);
+    border-radius: 50px; }
+  .task i {
+    float: right;
+    margin-left: 20px;
+    cursor: pointer; }
+  .comp .task {
+    background: #5afffb;
+    background: linear-gradient(130deg, #5afffb 0%, #37fc8b 50%, #5afffb 100%);
+    border-radius: 50px; }
+
+/*# sourceMappingURL=style.css.map */
