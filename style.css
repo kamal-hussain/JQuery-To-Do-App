@@ -60,4 +60,19 @@ h3 {
     background: linear-gradient(130deg, #5afffb 0%, #37fc8b 50%, #5afffb 100%);
     border-radius: 50px; }
 
+.task-edit {
+  width: 100%;
+  color: white;
+  font-weight: bolder;
+  padding: 18px;
+  margin: 6px 0; }
+  .notcomp .task-edit {
+    background: #47521d;
+    border-radius: 50px; }
+  .task-edit i {
+    display: none; }
+  .comp .task-edit {
+    background: #003332;
+    border-radius: 50px; }
+
 /*# sourceMappingURL=style.css.map */
