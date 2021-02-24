@@ -25,7 +25,6 @@ $(".txtb").on("keyup", function (e) {
 
         var redo = $('<i class="fas fa-redo"></i>').click(function () {
             var p = $(this).parent();
-            console.log(p);
             p.fadeOut(function () {
                 $(".notcomp").append(p);
                 p.fadeIn();
@@ -43,7 +42,8 @@ $(".txtb").on("keyup", function (e) {
                     .css({ color: "", background: "" });
                 });
         });
-        task.append(del, check, edit);
+
+        task.append(del, edit, check);
         $(".notcomp").append(task);
         //to clear the input value
         $(".txtb").val("");
