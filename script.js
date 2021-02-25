@@ -16,11 +16,12 @@ $(".txtb").on("keyup", function (e) {
             var p = $(this).parent();
             p.fadeOut(function () {
                 $(".comp").append(p);
-                task.append(redo);
                 p.fadeIn();
             });
+            task.append(redo);
+            redo.show().insertBefore("div i:nth-child(3)");
             $(this).hide();
-            redo.show();
+            
         });
 
         var redo = $('<i class="fas fa-redo"></i>').click(function () {
@@ -41,6 +42,13 @@ $(".txtb").on("keyup", function (e) {
                     $(this).attr({ class: "task", contenteditable: false })
                     .css({ color: "", background: "" });
                 });
+            // NOT WORKING
+            // p.on('blur keyup',function(e) {  
+            //     if (e.type === 'blur' || e.keyCode === 13)  
+            //     $(this).attr({ class: "task", contenteditable: false })
+            //         .css({ color: "", background: "" });  
+            // });
+                
         });
 
         task.append(del, edit, check);
