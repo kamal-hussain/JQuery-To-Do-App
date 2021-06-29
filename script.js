@@ -19,8 +19,9 @@ $(".txtb").on("keyup", function (e) {
                 p.fadeIn();
             });
             task.append(redo);
-            redo.show().insertBefore("div i:nth-child(3)");
-            $(this).hide();
+            $(this).hide();            
+            redo.show().insertAfter('.comp'.children('.task i:nth-child(2)'));
+
             
         });
 
