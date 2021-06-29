@@ -19,16 +19,11 @@ $(".txtb").on("keyup", function (e) {
                 task.append(redo);
                 p.fadeIn();
             });
-<<<<<<< HEAD
             task.append(redo);
             $(this).hide();            
-            redo.show().insertAfter('.comp'.children('.task i:nth-child(2)'));
+            redo.show().insertAfter('.comp'.children('.task i:nth-child(1)'));
 
             
-=======
-            $(this).hide();
-            redo.show();
->>>>>>> parent of 7ad5c85 (Redo button fix)
         });
 
         var redo = $('<i class="fas fa-redo"></i>').click(function () {
