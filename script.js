@@ -16,13 +16,19 @@ $(".txtb").on("keyup", function (e) {
             var p = $(this).parent();
             p.fadeOut(function () {
                 $(".comp").append(p);
+                task.append(redo);
                 p.fadeIn();
             });
+<<<<<<< HEAD
             task.append(redo);
             $(this).hide();            
             redo.show().insertAfter('.comp'.children('.task i:nth-child(2)'));
 
             
+=======
+            $(this).hide();
+            redo.show();
+>>>>>>> parent of 7ad5c85 (Redo button fix)
         });
 
         var redo = $('<i class="fas fa-redo"></i>').click(function () {
@@ -43,13 +49,6 @@ $(".txtb").on("keyup", function (e) {
                     $(this).attr({ class: "task", contenteditable: false })
                     .css({ color: "", background: "" });
                 });
-            // NOT WORKING
-            // p.on('blur keyup',function(e) {  
-            //     if (e.type === 'blur' || e.keyCode === 13)  
-            //     $(this).attr({ class: "task", contenteditable: false })
-            //         .css({ color: "", background: "" });  
-            // });
-                
         });
 
         task.append(del, edit, check);
